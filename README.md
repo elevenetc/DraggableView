@@ -16,5 +16,16 @@ Draggable views with rotation and skew/scale effects.
 See full sample at [`SampleGridContainer`](sample/src/main/java/su/levenetc/android/sample/SampleGridContainer.java)
 ### Animation adjustments
 [`SkewView`](library/src/main/java/su/levenetc/android/draggableview/SkewView.java) and [`RotateView`](library/src/main/java/su/levenetc/android/draggableview/RotateView.java) containe multipliers which change rotation, skew and scale values.
+### Download
+```Groovy
+repositories {
+    maven { url "https://jitpack.io" }
+}
+//...
+dependencies {
+    //...
+    compile 'com.github.elevenetc:draggableview:v1.0.0'
+}
+```
 ### Licence
 http://www.apache.org/licenses/LICENSE-2.0
