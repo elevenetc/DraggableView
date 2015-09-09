@@ -18,7 +18,6 @@ import android.widget.FrameLayout;
 
 import su.levenetc.android.draggableview.DragController;
 import su.levenetc.android.draggableview.DraggableView;
-import su.levenetc.android.draggableview.RotateView;
 import su.levenetc.android.draggableview.SkewView;
 import su.levenetc.android.draggableview.utils.Utils;
 
@@ -78,9 +77,8 @@ public class SampleGridContainer extends FrameLayout implements DragController.I
 
 	@Override public ViewGroup getContainerForDraggableView() {
 		Activity context = (Activity) getContext();
-		ViewGroup result = (ViewGroup) context.getWindow().getDecorView().getRootView();
-		ViewGroup childAt = (ViewGroup) result.getChildAt(0);
-		return (ViewGroup) childAt.getChildAt(1);
+		ViewGroup rootView = (ViewGroup) context.getWindow().getDecorView().getRootView();
+		return (ViewGroup) ((ViewGroup) rootView.getChildAt(0)).getChildAt(1);
 	}
 
 	@Override public void onDragStart() {
