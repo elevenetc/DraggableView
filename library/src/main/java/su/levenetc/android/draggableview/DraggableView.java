@@ -50,7 +50,10 @@ public abstract class DraggableView extends View {
 				getResources().getDisplayMetrics().densityDpi
 		);
 
-		float scale = 0.9f;//TODO
+		//TODO: replace workaround with scaling
+		//it is used to enlarge canvas zone
+		//otherwise camera's frustum cuts bitmap
+		float scale = 0.9f;
 		xCanvasTranslation = (int) (bitmap.getWidth() * scale);
 		yCanvasTranslation = (int) (bitmap.getWidth() * scale);
 
