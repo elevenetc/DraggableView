@@ -24,7 +24,7 @@ repositories {
 //...
 dependencies {
     //...
-    compile 'com.github.elevenetc:draggableview:v1.0.0'
+    compile 'com.github.elevenetc:draggableview:v1.0.1'
 }
 ```
 ### Licence
